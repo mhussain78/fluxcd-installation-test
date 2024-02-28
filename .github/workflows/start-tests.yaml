@@ -1,0 +1,11 @@
+name: test-github-dispatch-provider
+on:
+  repository_dispatch:
+    types: [Kustomization/podinfo.flux-system]
+  workflow_dispatch:
+jobs:
+  run-tests-staging:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Run tests
+        run: echo "running tests.."

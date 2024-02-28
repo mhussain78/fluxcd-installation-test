@@ -1,7 +1,6 @@
 name: test-github-dispatch-provider
 on:
   repository_dispatch:
-    types: [Kustomization/podinfo.flux-system]
   workflow_dispatch:
 jobs:
   run-tests-staging:

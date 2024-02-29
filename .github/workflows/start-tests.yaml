@@ -8,3 +8,6 @@ jobs:
     steps:
       - name: Run tests
         run: echo "running tests.."
+      - name: Print parameter
+        run: |
+          echo "${{ toJson(github.event) }}"
